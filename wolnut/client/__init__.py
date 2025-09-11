@@ -141,7 +141,7 @@ class WolClientConfig(BaseClientConfig):
         Returns:
             bool: True if the packet was sent successfully, False otherwise.
         """
-        return send_wol_packet(self.mac, self.host)
+        return send_wol_packet(self.mac)
 
 
 @dataclass
