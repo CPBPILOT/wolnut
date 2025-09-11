@@ -120,7 +120,7 @@ def main():
                                 client.name,
                                 client.type,
                             )
-                            if client.send_power_on():
+                            if client.send_power_on_signal():
                                 state_tracker.mark_wol_sent(client.name)
                         else:
                             logger.debug(
